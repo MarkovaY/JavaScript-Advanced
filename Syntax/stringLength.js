@@ -1,3 +1,5 @@
+// Find the total length of the three strings and the average length
+
 function strLength (a, b, c){
 
     let total = a.length + b.length + c.length;
