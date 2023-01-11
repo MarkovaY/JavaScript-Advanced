@@ -14,5 +14,9 @@ function values (a, b) {
     console.log(b);
 }
 
-values (5, 7)
+values (5, 7);
 
+Boolean(NaN);
+Boolean(5);
+Boolean([]);
+Boolean("");
