@@ -1,3 +1,5 @@
+// Finding the area of a circle, if the radius given is different than number, we need to print a message
+
 function area(radius) {
     if (typeof radius == 'number') {
         const result = radius ** 2 * Math.PI;
