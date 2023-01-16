@@ -1,3 +1,5 @@
+// We need to calculate the price for an amount of (given type of) fruits and print the results
+
 function calculate(fruit, grams, price) {
     let kilos = grams / 1000;
     let totalPrice = kilos * price;
