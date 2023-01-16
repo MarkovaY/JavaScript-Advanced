@@ -16,19 +16,19 @@ function radar(speed, area) {
             break;
     }
 
-    let difference = limit - speed;
-    if(difference >= 0){
-        console.log(`Driving ${speed} km/h in a ${limit} zone`)
+    let difference = speed - limit;
+    if(difference <= 0){
+        return `Driving ${speed} km/h in a ${limit} zone`;
     } else {
         let status = '';
-        if (Math.abs(difference) <= 20){
+        if (difference <= 20){
             status = 'speeding';
-        } else if(Math.abs(difference) <= 40){
+        } else if(difference <= 40){
             status = 'excessive speeding';
         } else {
             status = 'reckless driving';
         }
-        console.log(`The speed is ${Math.abs(difference)} km/h faster than the allowed speed of ${limit} - ${status}`)
+        return `The speed is ${difference} km/h faster than the allowed speed of ${limit} - ${status}`;
     }
 }
 
