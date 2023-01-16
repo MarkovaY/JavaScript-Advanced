@@ -12,9 +12,9 @@ function solve(...params) {
     for (i = 1; i < params.length; i++) {
 
         let command = params[i];
-        switch(command) {
+        switch (command) {
             case 'chop':
-                number /=2;
+                number /= 2;
                 break;
             case 'dice':
                 number = Math.sqrt(number);
