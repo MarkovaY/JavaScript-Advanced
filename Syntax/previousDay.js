@@ -1,11 +1,13 @@
+// We're given a date and we need to print back the previous date
+
 function date(year, month, day) {
-    const currentDate = new Date(year, month - 1, day - 1);
+    const previousDate = new Date(year, month - 1, day - 1);
 
-    const newYear = currentDate.getFullYear();
-    const newMonth = currentDate.getMonth() + 1;
-    const newDay = currentDate.getDate();
+    const newYear = previousDate.getFullYear();
+    const newMonth = previousDate.getMonth() + 1;
+    const previousDay = previousDate.getDate();
 
-    console.log(`${newYear}-${newMonth}-${newDay}`);
+    console.log(`${newYear}-${newMonth}-${previousDay}`);
 }
 
 date(2016, 9, 30);
