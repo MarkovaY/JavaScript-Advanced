@@ -4,14 +4,13 @@
 function solve(arr) {
 
     arr.sort((a, b) => a - b);
-    const start = Math.floor(arr.length / 2);
-    let result = [];
-    for (let i = start; i < arr.length; i++) {
-        result.push(arr[i]);
-    }
 
-    console.log(result);
+    const start = Math.floor(arr.length / 2);
+
+    let result = arr.splice(start, arr.length);
+
+    return result;
 }
 
-solve([4, 7, 2, 5]);
-solve([3, 19, 14, 7, 2, 19, 6]);
+console.log(solve([4, 7, 2, 5]));
+console.log(solve([3, 19, 14, 7, 2, 19, 6]));
