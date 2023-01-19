@@ -1,4 +1,5 @@
 function solve(matrix) {
+    // Find the sums of the two main diagonals in a matrix.
 
     let mainDiagonal = 0;
     let secondaryDiagonal = 0;
@@ -7,6 +8,7 @@ function solve(matrix) {
         mainDiagonal += matrix[i][i];
         secondaryDiagonal += matrix[i][matrix.length - i - 1];
     }
+
     console.log(mainDiagonal, secondaryDiagonal);
     
 }
