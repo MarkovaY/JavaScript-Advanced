@@ -3,9 +3,9 @@
 
 function city(name, population, treasury) {
     const city = {
-        name: name,
-        population: population,
-        treasury: treasury
+        name,
+        population,
+        treasury
     };
 
     return city;
