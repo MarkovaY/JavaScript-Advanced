@@ -17,7 +17,7 @@ function townRegistry(arr) {
         }  
 
         registry[name] += Number(population);
-        
+
     }
     
     // First way of printing
@@ -27,7 +27,6 @@ function townRegistry(arr) {
     .join('\n'));
 
     // Second way of printing
-    //
     // for(let name in registry){
     //     console.log(`${name} : ${registry[name]}`);
     // }
