@@ -1,4 +1,4 @@
-
+// Our task is to create valid playing cards. If the given face of the card is invalid, we have to throw an error.
 
 function createCard(face, suit) {
     const faces = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K', 'A'];
